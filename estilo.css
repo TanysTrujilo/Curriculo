@@ -1,0 +1,505 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #FFF3B0;
+    color: #263238;
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   TÍTULOS
+========================================= */
+
+h1 {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 42px;
+    margin: 20px 0 10px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    text-decoration-color: #FFD54F;
+    text-decoration-thickness: 3px;
+}
+
+h2 {
+    font-family: "Montserrat", Arial, sans-serif;
+    color: #123c69;
+    border-bottom: 3px solid #F4C542;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #1F6AA5;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   SELETORES POR ID
+========================================= */
+
+#top {
+    min-height: 100vh;
+}
+
+#perfil {
+    margin-top: 25px;
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.cabecalho {
+    background: linear-gradient(135deg, #123C69, #1F6AA5);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+
+/* =========================================
+   FOTOS
+========================================= */
+
+.fotos {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.fotos figure {
+    margin: 0;
+    text-align: center;
+}
+
+.fotos img {
+    width: 150px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.fotos img:hover {
+    transform: scale(1.06);
+}
+
+.fotos figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   PROFISSÃO
+========================================= */
+
+.profissao {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+mark {
+    background-color: #FFF3B0;
+    color: #263238;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   CARTÕES DAS SEÇÕES
+========================================= */
+
+.cartao {
+    background-color: #FFFDF0;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+
+    border: 1px solid #F4D35E;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   EXPERIÊNCIA
+========================================= */
+
+.experiencia-item {
+    background-color: #FFF9DC;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    border-left: 5px solid #F4C542;
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   CONTATO
+========================================= */
+
+.lista-contato {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-contato li {
+    background-color: #FFF9DC;
+    padding: 12px;
+    margin-bottom: 10px;
+
+    border-left: 4px solid #F4C542;
+    border-radius: 5px;
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.menu {
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background-color: #FFF3B0;
+    color: #123C69;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   SELETOR POR ATRIBUTO
+========================================= */
+
+a[target="_blank"] {
+    border: 2px solid #1F6AA5;
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    background-color: #FFF9DC;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+a {
+    color: #1769AA;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   PSEUDO-CLASSE
+========================================= */
+
+a:hover {
+    color: #D35400;
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: #123C69;
+    transform: translateY(-2px);
+}
+
+input:focus {
+    outline: none;
+
+    border-color: #1F6AA5;
+
+    box-shadow:
+        0 0 0 3px rgba(31, 106, 165, 0.15);
+}
+
+li:first-child {
+    font-weight: 600;
+}
+
+
+/* =========================================
+   LISTAS
+========================================= */
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+li::marker {
+    color: #1F6AA5;
+}
+
+
+/* =========================================
+   ASIDE
+========================================= */
+
+.perfil {
+    background-color: #123C69;
+    color: #FFFFFF;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.perfil h2 {
+    color: #FFFFFF;
+}
+
+
+/* =========================================
+   INFORMAÇÕES ADICIONAIS
+========================================= */
+
+details {
+    background-color: #FFF9DC;
+
+    padding: 18px;
+
+    border-radius: 8px;
+
+    border: 1px solid #F4D35E;
+}
+
+summary {
+    cursor: pointer;
+
+    font-weight: bold;
+
+    color: #123C69;
+}
+
+summary:hover {
+    color: #D35400;
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+button {
+    background-color: #1F6AA5;
+
+    color: #FFFFFF;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-family: "Roboto", Arial, sans-serif;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   MODAL
+========================================= */
+
+dialog {
+    width: 90%;
+    max-width: 500px;
+
+    padding: 30px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+dialog h2 {
+    margin-top: 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 5px;
+
+    border: 1px solid #CBD2D9;
+
+    border-radius: 6px;
+
+    font-family: "Roboto", Arial, sans-serif;
+
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #7A7A7A;
+}
+
+
+/* =========================================
+   LINKS ÚTEIS
+========================================= */
+
+.links-uteis {
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   VOLTAR AO TOPO
+========================================= */
+
+.voltar-topo {
+    text-align: center;
+
+    margin: 30px 0;
+}
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+footer {
+    background-color: #17212B;
+
+    color: #E8EDF1;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    margin-top: 40px;
+}
+
+footer strong {
+    color: #FFFFFF;
+
+    font-family: "Montserrat", Arial, sans-serif;
+
+    font-size: 20px;
+}
+
+footer a {
+    color: #F4C542;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 700px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .cabecalho {
+        padding: 30px 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu a {
+        display: block;
+
+        width: 100%;
+    }
+
+    .cartao {
+        padding: 20px;
+    }
+
+    .fotos img {
+        width: 120px;
+        height: 130px;
+    }
+
+    .links-uteis {
+        flex-direction: column;
+    }
+
+    dialog {
+        width: 95%;
+
+        padding: 20px;
+    }
+}
